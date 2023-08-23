@@ -2,8 +2,10 @@
 
 // foundation
 @import 'color';
-@import 'typography';
-@import 'space_shadow';
+
+// font
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css); 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,600&display=swap');
 
 
 @keyframes loading {
@@ -59,6 +61,47 @@
       fill: none;
       animation: loading 1s infinite;
 
+    }
+  }
+}
+
+body {
+  color: $gray_120;
+  line-height: 1.2;
+  font-size: 16px;
+  font-family: 'Noto Sans KR', sans-serif;
+  word-wrap: break-word;
+  font-weight: 400;
+}
+
+*{
+  box-sizing: border-box;
+  outline: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+
+  .top-visual {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+    .wave-txt {
+      
+
+      .wave {
+        display: flex;
+
+        h1 {
+          font-family: 'Poppins', sans-serif;
+          font-size: 4rem;
+          text-transform: uppercase;
+        }
+      }
     }
   }
 }

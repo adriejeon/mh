@@ -7,6 +7,8 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css); 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,600&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 
 @keyframes loading {
   0% {
@@ -27,6 +29,36 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes wave {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes wave_reverse {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
 
 .before_load {
   .loading {
@@ -86,22 +118,59 @@ body {
   height: 100%;
 
   .top-visual {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     position: relative;
+    transition: 1s ease;
+    background: $gray_120;
+    overflow-y: auto;
+    overflow-x: hidden;
 
     .wave-txt {
-      
+      display: flex;
+      flex-direction: column;
 
-      .wave {
-        display: flex;
+      .reverse {
+        animation: wave_reverse 40s infinite linear !important;
 
         h1 {
-          font-family: 'Poppins', sans-serif;
-          font-size: 4rem;
-          text-transform: uppercase;
+          color: $purple_40 !important;
+
+          em {
+            display: block;
+            height: fit-content;
+          }
         }
       }
+
+      .wave {
+        position: relative;
+        display: flex;
+        flex-shrink: 0;
+        animation: wave 40s infinite linear;
+        width: 100%;
+
+        h1 {
+          font-family: 'Anton', sans-serif;
+          font-size: 21vh;
+          font-weight: 500;
+          text-transform: uppercase;
+          transition: 1s ease .3s;
+          position: relative;
+          top:0;
+          white-space: nowrap;
+          margin:0;
+          line-height: .9;
+          color: $blue_40;
+
+          em {
+            display: block;
+            height: fit-content;
+          }
+        }
+      }
+
+    
     }
   }
 }

@@ -300,7 +300,7 @@ body {
         animation: wave_reverse 40s infinite linear !important;
 
         h1 {
-          color: $blue_40 !important;
+          color: $yellow_20 !important;
 
           em {
             display: block;
@@ -327,7 +327,7 @@ body {
           white-space: nowrap;
           margin:0;
           line-height: .9;
-          color: $purple_40;
+          color: $blue_50;
 
           em {
             display: block;
@@ -422,7 +422,7 @@ body {
         transform: rotate(-50deg);
         position: absolute;
         left: 3vw;
-        top: 50vh;
+        top: 48vh;
       }
     }
   }

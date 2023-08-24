@@ -231,7 +231,7 @@ body {
   animation: wave_reverse 40s infinite linear !important;
 }
 .main .top-visual .wave-txt .reverse h1 {
-  color: #5C9AFF !important;
+  color: #F5C400 !important;
 }
 .main .top-visual .wave-txt .reverse h1 em {
   display: block;
@@ -255,7 +255,7 @@ body {
   white-space: nowrap;
   margin: 0;
   line-height: 0.9;
-  color: #C77BF9;
+  color: #3884FF;
 }
 .main .top-visual .wave-txt .wave h1 em {
   display: block;
@@ -338,5 +338,5 @@ body {
   transform: rotate(-50deg);
   position: absolute;
   left: 3vw;
-  top: 50vh;
+  top: 48vh;
 }

@@ -59,6 +59,156 @@
 }
 
 
+// responsive
+@media (min-width: 1024px) and (max-width: 1399px) {
+
+  .kv-sticker {
+
+    .sticker {
+
+      h2 {
+        font-size: 10vw !important;
+      }
+    }
+  }
+
+  .obj1 {
+    width: 22vw !important;
+    height: 16vh !important;
+    left: 6vw;
+    top: 13vh;
+  }
+
+  .obj2 {
+    width: 51vw !important;
+    height: 16vh !important;
+    left: 40vw !important;
+    top: 30vh !important;
+  }
+
+  .obj3 {
+    width: 27vw !important;
+    height: 16vh !important;
+    left: 61vw !important;
+    top: 14vh !important;
+  }
+
+  .obj4 {
+    width: 33vw !important;
+    height: 16vh !important;
+    left: 38vw !important;
+    top: 55vh !important;
+  }
+
+  .obj5 {
+    width: 43vw !important;
+    height: 16vh !important;
+    left: 3vw !important;
+    top: 55vh !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .kv-sticker {
+
+    .sticker {
+
+      h2 {
+        font-size: 12vw !important;
+      }
+    }
+  }
+
+  .obj1 {
+    width: 26vw !important;
+    height: 16vh !important;
+    left: 6vw;
+    top: 13vh;
+  }
+
+  .obj2 {
+    width: 59vw !important;
+    height: 16vh !important;
+    left: 32vw !important;
+    top: 30vh !important;
+  }
+
+  .obj3 {
+    width: 30vw !important;
+    height: 16vh !important;
+    left: 56vw !important;
+    top: 14vh !important;
+  }
+
+  .obj4 {
+    width: 37vw !important;
+    height: 16vh !important;
+    left: 46vw !important;
+    top: 55vh !important;
+  }
+
+  .obj5 {
+    width: 47vw !important;
+    height: 16vh !important;
+    left: 6vw !important;
+    top: 57vh !important;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .kv-sticker {
+
+    .sticker {
+      border-radius: 14px !important;
+
+      h2 {
+        font-size: 16vw !important;
+      }
+    }
+  }
+
+  .obj1 {
+    width: 33vw !important;
+    height: 11vh !important;
+    left: 6vw;
+    top: 13vh;
+  }
+
+  .obj2 {
+    width: 79vw !important;
+    height: 11vh !important;
+    left: 15vw !important;
+    top: 30vh !important;
+  }
+
+  .obj3 {
+    width: 40vw !important;
+    height: 11vh !important;
+    left: 52vw !important;
+    top: 14vh !important;
+  }
+
+  .obj4 {
+    width: 48vw !important;
+    height: 11vh !important;
+    left: 46vw !important;
+    top: 55vh !important;
+  }
+
+  .obj5 {
+    width: 63vw !important;
+    height: 11vh !important;
+    left: 6vw !important;
+    top: 54vh !important;
+  }
+}
+
+
+
+
 
 .before_load {
   .loading {
@@ -117,13 +267,29 @@ body {
   width: 100%;
   height: 100%;
 
+  .header {
+    width: 100%;
+    height: 6vh;
+    background: $gray_120;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+
+    .go-home {
+      font-size: 20px;
+      font-family: 'Anton', sans-serif;
+      font-weight: 400;
+      color: white;
+    }
+  }
+
   .top-visual {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: relative;
     transition: 1s ease;
     background: $gray_120;
-    overflow-y: auto;
+    overflow-y: hidden;
     overflow-x: hidden;
 
     .wave-txt {
@@ -134,7 +300,7 @@ body {
         animation: wave_reverse 40s infinite linear !important;
 
         h1 {
-          color: $purple_40 !important;
+          color: $blue_40 !important;
 
           em {
             display: block;
@@ -161,7 +327,7 @@ body {
           white-space: nowrap;
           margin:0;
           line-height: .9;
-          color: $blue_40;
+          color: $purple_40;
 
           em {
             display: block;
@@ -171,6 +337,93 @@ body {
       }
 
     
+    }
+
+    .kv-sticker {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      object-fit: cover;
+
+      .sticker {
+        background: rgba( 255, 255, 255, 0.15 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 16px );
+        border-radius: 28px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+        h2 {
+          font-size: 8vw;
+          font-family: 'Anton', sans-serif;
+          font-weight: 400;
+          color: white;
+          text-transform: uppercase;
+        }
+      }
+
+      .obj1 {
+        width: 15vw;
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: rotate(-15deg);
+        position: absolute;
+        left: 6vw;
+        top: 13vh;
+      }
+
+      .obj2 {
+        width: 38vw;
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: rotate(15deg);
+        position: absolute;
+        left: 40vw;
+        top: 30vh;
+      }
+
+      .obj3 {
+        width: 19vw;
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: rotate(30deg);
+        position: absolute;
+        left: 71vw;
+        top: 14vh;
+      }
+
+      .obj4 {
+        width: 23vw;
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: rotate(-30deg);
+        position: absolute;
+        left: 38vw;
+        top: 55vh;
+      }
+
+      .obj5 {
+        width: 31vw;
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: rotate(-50deg);
+        position: absolute;
+        left: 3vw;
+        top: 50vh;
+      }
     }
   }
 }

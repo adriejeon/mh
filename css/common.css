@@ -187,6 +187,7 @@ body {
   font-family: "Noto Sans KR", sans-serif;
   word-wrap: break-word;
   font-weight: 400;
+  background: #0B0B0B;
 }
 
 * {
@@ -339,4 +340,41 @@ body {
   position: absolute;
   left: 3vw;
   top: 48vh;
+}
+.main .thum-container {
+  width: 100%;
+  height: 100%;
+}
+.main .thum-container .thum-area {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+.main .thum-container .thum-area .rows {
+  display: flex;
+  justify-content: center;
+}
+.main .thum-container .thum-area .rows .thum-item {
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 16px;
+}
+.main .thum-container .thum-area .rows .thum-item .thum-con {
+  transition: all 0.2s ease-out;
+}
+.main .thum-container .thum-area .rows .thum-item .thum-con .thum-img {
+  width: 100%;
+  background-size: contain;
+  overflow: hidden;
+}
+.main .thum-container .thum-area .rows .thum-item .thum-con .thum-img img {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background-size: contain;
+  vertical-align: bottom;
+  transition: all 0.5s ease-out;
 }

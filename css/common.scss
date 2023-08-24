@@ -254,6 +254,7 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
   word-wrap: break-word;
   font-weight: 400;
+  background: $gray_120;
 }
 
 *{
@@ -423,6 +424,50 @@ body {
         position: absolute;
         left: 3vw;
         top: 48vh;
+      }
+    }
+  }
+
+  .thum-container {
+    width: 100%;
+    height: 100%;
+
+    .thum-area {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+
+      .rows {
+        display: flex;
+        justify-content: center;
+
+        .thum-item {
+          width: 33.3%;
+          display: flex;
+          flex-direction: column;
+          margin-right: 16px;
+
+          .thum-con {
+            transition: all 0.2s ease-out;
+
+            .thum-img {
+              width: 100%;
+              background-size: contain;
+              overflow: hidden;
+
+              img {
+                width: 100%;
+                height: 100%;
+                opacity: 1;
+                background-size: contain;
+                vertical-align: bottom;
+                transition: all 0.5s ease-out;
+              }
+            }
+          }
+        }
       }
     }
   }

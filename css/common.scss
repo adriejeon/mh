@@ -106,6 +106,7 @@
     left: 3vw !important;
     top: 55vh !important;
   }
+
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -153,6 +154,51 @@
     height: 16vh !important;
     left: 6vw !important;
     top: 57vh !important;
+  }
+
+  .thum-container {
+
+    .thum-area {
+
+      .rows {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .thum-item {
+          width: 48% !important;
+          display: flex;
+          flex-direction: column;
+          margin-right: 16px;
+          margin-bottom: 16px;
+
+          &:nth-child(2) {
+            margin-right: 0 !important;
+          }
+          
+          .thum-con {
+            transition: all 0.2s ease-out;
+
+            .thum-img {
+
+              &:hover {
+                .into-img {
+                  opacity: 0 !important;
+                  bottom: 0 !important;
+                }
+              }
+            }
+
+            .thum-text {
+              display: flex !important;
+              padding: 16px 0 !important;
+              flex-direction: column;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
   }
 
 }
@@ -210,6 +256,49 @@
     height: 11vh !important;
     left: 6vw !important;
     top: 54vh !important;
+  }
+
+  .thum-container {
+
+    .thum-area {
+
+      .rows {
+        flex-direction: column;
+
+        .thum-item {
+          width: 100% !important;
+          display: flex;
+          flex-direction: column;
+          margin-right: 0 !important;
+          margin-bottom: 16px;
+
+          &:nth-child(2) {
+            margin-right: 0 !important;
+          }
+          
+          .thum-con {
+            transition: all 0.2s ease-out;
+
+            .thum-img {
+
+              &:hover {
+                .into-img {
+                  opacity: 0 !important;
+                  bottom: 0 !important;
+                }
+              }
+            }
+
+            .thum-text {
+              display: flex !important;
+              padding: 16px 0 !important;
+              flex-direction: column;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -438,6 +527,7 @@ body {
   .thum-container {
     width: 100%;
     height: 100%;
+    padding: 16px;
 
     .thum-area {
       display: flex;
@@ -450,11 +540,20 @@ body {
         display: flex;
         justify-content: center;
 
+        &:last-child {
+          margin-bottom: 0;
+        }
+
         .thum-item {
-          width: 33.3%;
+          width: 25%;
           display: flex;
           flex-direction: column;
           margin-right: 16px;
+          margin-bottom: 16px;
+
+          &:last-child {
+            margin-right: 0;
+          }
 
           .thum-con {
             transition: all 0.2s ease-out;
@@ -463,6 +562,8 @@ body {
               width: 100%;
               background-size: contain;
               overflow: hidden;
+              transition: all 0.2s ease-out;
+              position: relative;
 
               img {
                 width: 100%;
@@ -471,6 +572,46 @@ body {
                 background-size: contain;
                 vertical-align: bottom;
                 transition: all 0.5s ease-out;
+              }
+
+              .into-img {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                bottom: -80px;
+                z-index: 1;
+                left: 0;
+                opacity: 0;
+                background: rgb(0, 0, 0, 0.4);
+                width: 100%;
+                height: 80px;
+                padding: 16px;
+                transition-property: all;
+                transition-duration: 0.4s;
+                transition-delay: 0.08s;
+              }
+
+              &:hover {
+                .into-img {
+                  opacity: 1;
+                  bottom: 0 !important;
+                }
+              }
+            }
+
+            .thum-text {
+              display: none;
+              padding: 16px;
+              
+              h4 {
+                color: white;
+                font-size: 20px;
+                margin-bottom: 4px;
+              }
+
+              span {
+                color: white;
+                font-size: 14px;
               }
             }
           }

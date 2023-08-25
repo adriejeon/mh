@@ -109,6 +109,34 @@
     left: 6vw !important;
     top: 57vh !important;
   }
+  .thum-container .thum-area .rows {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .thum-container .thum-area .rows .thum-item {
+    width: 48% !important;
+    display: flex;
+    flex-direction: column;
+    margin-right: 16px;
+    margin-bottom: 16px;
+  }
+  .thum-container .thum-area .rows .thum-item:nth-child(2) {
+    margin-right: 0 !important;
+  }
+  .thum-container .thum-area .rows .thum-item .thum-con {
+    transition: all 0.2s ease-out;
+  }
+  .thum-container .thum-area .rows .thum-item .thum-con .thum-img:hover .into-img {
+    opacity: 0 !important;
+    bottom: 0 !important;
+  }
+  .thum-container .thum-area .rows .thum-item .thum-con .thum-text {
+    display: flex !important;
+    padding: 16px 0 !important;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 @media (max-width: 767px) {
   .wave h1 {
@@ -149,6 +177,32 @@
     height: 11vh !important;
     left: 6vw !important;
     top: 54vh !important;
+  }
+  .thum-container .thum-area .rows {
+    flex-direction: column;
+  }
+  .thum-container .thum-area .rows .thum-item {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    margin-right: 0 !important;
+    margin-bottom: 16px;
+  }
+  .thum-container .thum-area .rows .thum-item:nth-child(2) {
+    margin-right: 0 !important;
+  }
+  .thum-container .thum-area .rows .thum-item .thum-con {
+    transition: all 0.2s ease-out;
+  }
+  .thum-container .thum-area .rows .thum-item .thum-con .thum-img:hover .into-img {
+    opacity: 0 !important;
+    bottom: 0 !important;
+  }
+  .thum-container .thum-area .rows .thum-item .thum-con .thum-text {
+    display: flex !important;
+    padding: 16px 0 !important;
+    flex-direction: column;
+    width: 100%;
   }
 }
 .before_load .loading {
@@ -347,6 +401,7 @@ body {
 .main .thum-container {
   width: 100%;
   height: 100%;
+  padding: 16px;
 }
 .main .thum-container .thum-area {
   display: flex;
@@ -359,11 +414,18 @@ body {
   display: flex;
   justify-content: center;
 }
+.main .thum-container .thum-area .rows:last-child {
+  margin-bottom: 0;
+}
 .main .thum-container .thum-area .rows .thum-item {
-  width: 33.3%;
+  width: 25%;
   display: flex;
   flex-direction: column;
   margin-right: 16px;
+  margin-bottom: 16px;
+}
+.main .thum-container .thum-area .rows .thum-item:last-child {
+  margin-right: 0;
 }
 .main .thum-container .thum-area .rows .thum-item .thum-con {
   transition: all 0.2s ease-out;
@@ -372,6 +434,8 @@ body {
   width: 100%;
   background-size: contain;
   overflow: hidden;
+  transition: all 0.2s ease-out;
+  position: relative;
 }
 .main .thum-container .thum-area .rows .thum-item .thum-con .thum-img img {
   width: 100%;
@@ -380,4 +444,37 @@ body {
   background-size: contain;
   vertical-align: bottom;
   transition: all 0.5s ease-out;
+}
+.main .thum-container .thum-area .rows .thum-item .thum-con .thum-img .into-img {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: -80px;
+  z-index: 1;
+  left: 0;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 80px;
+  padding: 16px;
+  transition-property: all;
+  transition-duration: 0.4s;
+  transition-delay: 0.08s;
+}
+.main .thum-container .thum-area .rows .thum-item .thum-con .thum-img:hover .into-img {
+  opacity: 1;
+  bottom: 0 !important;
+}
+.main .thum-container .thum-area .rows .thum-item .thum-con .thum-text {
+  display: none;
+  padding: 16px;
+}
+.main .thum-container .thum-area .rows .thum-item .thum-con .thum-text h4 {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+.main .thum-container .thum-area .rows .thum-item .thum-con .thum-text span {
+  color: white;
+  font-size: 14px;
 }

@@ -111,6 +111,9 @@
   }
 }
 @media (max-width: 767px) {
+  .wave h1 {
+    font-size: 20vh !important;
+  }
   .kv-sticker .sticker {
     border-radius: 14px !important;
   }

@@ -140,7 +140,7 @@
 }
 @media (max-width: 767px) {
   .wave h1 {
-    font-size: 18vh !important;
+    font-size: 21vh !important;
   }
   .kv-sticker .sticker {
     border-radius: 14px !important;
@@ -244,7 +244,6 @@ body {
   font-family: "Noto Sans KR", sans-serif;
   word-wrap: break-word;
   font-weight: 400;
-  background: #0B0B0B;
 }
 
 * {
@@ -257,20 +256,7 @@ body {
 .main {
   width: 100%;
   height: 100%;
-}
-.main .header {
-  width: 100%;
-  height: 6vh;
   background: #0B0B0B;
-  display: flex;
-  align-items: center;
-  padding-left: 16px;
-}
-.main .header .go-home {
-  font-size: 20px;
-  font-family: "Anton", sans-serif;
-  font-weight: 400;
-  color: white;
 }
 .main .top-visual {
   width: 100%;
@@ -304,7 +290,7 @@ body {
 }
 .main .top-visual .wave-txt .wave h1 {
   font-family: "Anton", sans-serif;
-  font-size: 21vh;
+  font-size: 22vh;
   font-weight: 500;
   text-transform: uppercase;
   transition: 1s ease 0.3s;
@@ -477,4 +463,154 @@ body {
 .main .thum-container .thum-area .rows .thum-item .thum-con .thum-text span {
   color: white;
   font-size: 14px;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.footer p {
+  font-size: 14px;
+}
+.footer p.dark {
+  color: #C9C9C9;
+}
+.footer p.light {
+  color: #545454;
+}
+
+.con {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.con div {
+  opacity: 0;
+}
+.con .section_on {
+  opacity: 1 !important;
+  transform: translateZ(0) !important;
+  transition: transform 1.5s, opacity 1.5s !important;
+}
+.con .top-visual {
+  width: 100%;
+  min-height: 100vh;
+  background: #0B0B0B;
+}
+.con .top-visual img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.con .sec-detail {
+  max-width: 1024px;
+  padding: 92px;
+  position: relative;
+  transition: all 0.2s ease-out;
+}
+.con .sec-detail.headline:after {
+  content: "";
+  position: absolute;
+  left: 92px;
+  bottom: 0;
+  right: 92px;
+  z-index: 5;
+  height: 1px;
+  background-color: #E2E2E2;
+}
+.con .sec-detail .title {
+  max-width: 1024px;
+  min-width: 1024px;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -2px;
+  color: #212121;
+  word-break: keep-all;
+  white-space: pre-line;
+}
+.con .sec-detail h4 {
+  font-size: 44px;
+  font-weight: 400;
+  color: #212121;
+  max-width: 1024px;
+}
+.con .sec-detail p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #757575;
+  margin-top: 24px;
+  line-height: 1.6;
+}
+.con .sec-detail span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #212121;
+}
+.con .sec-detail .summary {
+  display: flex;
+  margin-top: 40px;
+  min-height: 78px;
+  flex-wrap: wrap;
+}
+.con .sec-detail .summary dl {
+  padding-right: 7%;
+  width: 33.3%;
+  margin-top: 16px;
+}
+.con .sec-detail .summary dl dt {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.1px;
+  line-height: 24px;
+  color: #888888;
+  vertical-align: top;
+}
+.con .sec-detail .summary dl dd {
+  font-weight: 400;
+  display: flex;
+  margin-top: 8px;
+}
+.con .sec-detail .summary dl dd span {
+  min-width: 28px;
+  max-width: 28px;
+  margin-right: 8px;
+}
+.con .sec-detail .summary dl dd span img {
+  min-width: 28px;
+  max-width: 28px;
+}
+
+.header {
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  padding: 0 92px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  transition: all 0.5s ease;
+  z-index: 10;
+}
+.header.hidden {
+  top: -80px;
+}
+.header.white-bg {
+  background-color: white;
+}
+.header.white-bg .go-home {
+  color: #212121 !important;
+}
+.header .go-home {
+  font-size: 16px;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  color: white;
 }

@@ -387,6 +387,9 @@
     max-width: 1024px;
     padding: 92px 24px 40px 24px !important;
   }
+  .content-wrap .content-inner.same-con {
+    padding-top: 40px !important;
+  }
   .content-wrap .content-inner h2 {
     font-size: 28px !important;
   }

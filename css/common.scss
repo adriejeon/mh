@@ -560,6 +560,10 @@
       max-width: 1024px;
       padding: 92px 24px 40px 24px !important;
 
+      &.same-con {
+        padding-top: 40px !important;
+      }
+
       h2 {
         font-size: 28px !important;
       }

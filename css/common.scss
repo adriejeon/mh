@@ -404,6 +404,30 @@
 
       dl {
         width: 50% !important;
+
+        &:nth-child(2) {
+          padding-right: 0 !important;
+        }
+
+        &:nth-child(4) {
+          padding-right: 0 !important;
+        }
+
+        &:nth-child(6) {
+          padding-right: 0 !important;
+        }
+
+        &:nth-child(1) {
+          padding-right: 10% !important;
+        }
+
+        &:nth-child(3) {
+          padding-right: 10% !important;
+        }
+
+        &:nth-child(5) {
+          padding-right: 10% !important;
+        }
       }
     }
   }
@@ -1112,5 +1136,31 @@ body {
     font-family: 'Anton', sans-serif;
     font-weight: 400;
     color: white;
+  }
+}
+
+.gototop {
+  width: 52px;
+  height: 52px;
+  background: rgba($color: $gray_120, $alpha: 0.7);
+  border: none;
+  border-radius: 999px;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 998;
+
+  &.show {
+    opacity: 1;
+  }
+
+  svg {
+    
+    path {
+      fill: white;
+    }
   }
 }

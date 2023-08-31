@@ -767,6 +767,9 @@ body {
   transition: all 0.2s ease-out;
 }
 .con .more-projects .other-project.next {
+  align-items: flex-start;
+}
+.con .more-projects .other-project.prev {
   align-items: flex-end;
 }
 .con .more-projects .other-project .text-direction {
@@ -804,7 +807,7 @@ body {
   text-align: right;
 }
 .con .more-projects .next:hover .text-direction svg.next-svg {
-  transform: translateX(5px);
+  transform: translateX(-5px);
 }
 .con .more-projects .next:hover h4 {
   text-decoration: underline;
@@ -813,7 +816,7 @@ body {
   text-decoration-thickness: 1px;
 }
 .con .more-projects .prev:hover .text-direction svg.pre-svg {
-  transform: translateX(-5px);
+  transform: translateX(5px);
 }
 .con .more-projects .prev:hover h4 {
   text-decoration: underline;

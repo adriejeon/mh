@@ -2,6 +2,7 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Sans:wght@300;500&display=swap");
 @keyframes loading {
   0% {
     stroke-dashoffset: 157;
@@ -38,6 +39,38 @@
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+@keyframes change {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  10% {
+    transform: translate3d(0, 0, 0);
+  }
+  25% {
+    transform: translate3d(0, -118%, 0);
+  }
+  35% {
+    transform: translate3d(0, -118%, 0);
+  }
+  50% {
+    transform: translate3d(0, -233%, 0);
+  }
+  60% {
+    transform: translate3d(0, -233%, 0);
+  }
+  75% {
+    transform: translate3d(0, -118%, 0);
+  }
+  85% {
+    transform: translate3d(0, -118%, 0);
+  }
+  95% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
   }
 }
 @media (min-width: 1024px) and (max-width: 1399px) {
@@ -79,6 +112,9 @@
   }
   .more-projects {
     padding: 60px 40px !important;
+  }
+  .table-contents {
+    display: none !important;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -177,6 +213,16 @@
   }
   .more-projects {
     padding: 60px 40px !important;
+  }
+  .top-visual .blue {
+    flex-direction: column !important;
+  }
+  .top-visual .blue .main_text {
+    margin-right: 0 !important;
+    margin-bottom: 16px;
+  }
+  .table-contents {
+    display: none !important;
   }
 }
 @media (max-width: 767px) {
@@ -318,6 +364,49 @@
   }
   .more-projects .other-project h4.next-project-name {
     margin-right: 0 !important;
+  }
+  .top-visual .blue {
+    flex-direction: column !important;
+    padding: 24px;
+  }
+  .top-visual .blue .main_text {
+    margin-right: 0 !important;
+    margin-bottom: 16px;
+    font-size: 54px !important;
+    line-height: 1;
+  }
+  .top-visual .blue ul {
+    font-size: 54px !important;
+  }
+  .table-contents {
+    display: none !important;
+  }
+  .content-wrap .content-inner {
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    padding: 92px 24px 40px 24px !important;
+  }
+  .content-wrap .content-inner h2 {
+    font-size: 28px !important;
+  }
+  .content-wrap .content-inner h3 {
+    font-size: 20px !important;
+  }
+  .content-wrap .content-inner p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #646464;
+    margin-top: 12px;
+    font-family: "IBM Plex Sans", sans-serif;
+  }
+  .content-wrap .content-img {
+    width: 88%;
+  }
+  .content-wrap .content-img img {
+    width: 100%;
+    object-fit: cover;
   }
 }
 .before_load .loading {
@@ -661,6 +750,36 @@ body {
   justify-content: center;
   align-items: center;
 }
+.con .top-visual .blue {
+  background: #0F6BFF;
+  width: 100%;
+  height: 100%;
+}
+.con .top-visual .blue span {
+  color: white;
+  font-size: 60px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 300;
+}
+.con .top-visual .blue span.main_text {
+  margin-right: 24px;
+}
+.con .top-visual .blue ul {
+  display: flex;
+  flex-direction: column;
+  font-size: 60px;
+  font-weight: 600;
+  color: white;
+  height: 78px;
+  overflow: hidden;
+  padding-top: 5px;
+}
+.con .top-visual .blue ul li {
+  animation: change 10s infinite;
+  margin-bottom: 10px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+}
 .con .top-visual img {
   height: 100%;
   width: 100%;
@@ -719,9 +838,15 @@ body {
   flex-wrap: wrap;
 }
 .con .sec-detail .summary dl {
-  padding-right: 7%;
+  padding-right: 4%;
   width: 33.3%;
   margin-top: 24px;
+}
+.con .sec-detail .summary dl:nth-child(3) {
+  padding-right: 0;
+}
+.con .sec-detail .summary dl:nth-child(6) {
+  padding-right: 0;
 }
 .con .sec-detail .summary dl dt {
   font-size: 14px;
@@ -736,6 +861,7 @@ body {
   display: flex;
   margin-top: 8px;
   font-size: 14px;
+  line-height: 1.4;
 }
 .con .sec-detail .summary dl dd span {
   min-width: 28px;
@@ -842,10 +968,101 @@ body {
   text-decoration-color: #212121;
   text-decoration-thickness: 1px;
 }
+.con .table-contents {
+  position: sticky;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 1780px;
+  margin: 0 auto;
+  transition: all 0.2s ease-out;
+  z-index: 1;
+}
+.con .table-contents .contents-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  flex-direction: column;
+  top: 60px;
+}
+.con .table-contents .contents-container a {
+  color: #0B0B0B;
+  font-size: 14px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 8px 20px;
+  border-left: 2px solid #C9C9C9;
+}
+.con .table-contents .contents-container a:hover {
+  color: #0F6BFF;
+  font-weight: 700;
+  border-left: 2px solid #0F6BFF;
+}
+.con .table-contents .contents-container a.active {
+  color: #0F6BFF;
+  font-weight: 700;
+  border-left: 2px solid #0F6BFF;
+}
+.con .content-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.con .content-wrap.gray {
+  background: #FAFAFA;
+}
+.con .content-wrap .content-inner {
+  display: flex;
+  flex-direction: column;
+  max-width: 1024px;
+  padding: 92px 92px 60px 92px;
+}
+.con .content-wrap .content-inner h2 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -2px;
+  color: #212121;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.con .content-wrap .content-inner h3 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -2px;
+  color: #212121;
+  margin-top: 24px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.con .content-wrap .content-inner p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #646464;
+  margin-top: 12px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.con .content-wrap .content-img {
+  max-width: 1024px;
+  display: flex;
+  align-items: center;
+}
+.con .content-wrap .content-img img {
+  width: 100%;
+  object-fit: cover;
+}
 
 .header {
   width: 100%;
-  height: 80px;
+  height: 60px;
   display: flex;
   align-items: center;
   padding: 0 92px;
@@ -857,7 +1074,7 @@ body {
   z-index: 10;
 }
 .header.hidden {
-  top: -80px;
+  top: -60px;
 }
 .header.white-bg {
   background-color: white;
@@ -867,8 +1084,8 @@ body {
 }
 .header .go-home {
   font-size: 16px;
-  font-family: "Anton", sans-serif;
-  font-weight: 400;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
   color: white;
 }
 

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <title>Myenghee Jeon</title>
+</head>
+<body class="before_load">
+    <div class="loading">
+        <svg class="loading_circle">
+            <circle cx="50%" cy="50%" r="25"></circle>
+        </svg>
+    </div>
+    <div class="header">
+        <a href="main.html">
+            <span class="go-home">
+                Myeonghee Jeon
+            </span>
+        </a>
+    </div>
+    <main class="con">
+        <button onclick="goToTop()" type="button" class="gototop">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" width="24" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 24V0h24v24z"/></mask><g mask="url(#a)"><path fill="#333" d="m18 17-1.4 1.4-4.6-4.6-4.6 4.6L6 17l6-6 6 6Zm0-9H6V6h12v2Z"/></g></svg>
+        </button>
+        <div class="top-visual">
+            <div class="link-area">
+                <a href="https://danusyslab.com/main.html" target="_blank" class="out-link">
+                    <span>Go to this site</span>
+                    <svg class="next-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" width="24" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h24v24H0z"/></mask><g mask="url(#a)"><path fill="#333" d="m15 19-1.4-1.4 4.6-4.6H2v-2h16.2l-4.6-4.6L15 5l7 7-7 7Z"/></g></svg>
+                </a>
+            </div>
+            <div class="hero-pc blue">
+                <span class="main_text">
+                    We need more
+                </span>
+                <ul>
+                    <li class="content container list item">Efficiency
+                    </li>
+                    <li class="content container list item">
+                        Consistency
+                    </li>
+                    <li class="content container list item">
+                        Convenience
+                    </li>
+                </ul>
+            </div>
+            <div class="hero-mo blue">
+                <span class="main_text">
+                    We need more
+                </span>
+                <ul>
+                    <li class="content container list item">Efficiency
+                    </li>
+                    <li class="content container list item">
+                        Consistency
+                    </li>
+                    <li class="content container list item">
+                        Convenience
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sec-detail headline">
+            <h3 class="title">디자인시스템</h3>
+            <div class="summary">
+                <dl>
+                    <dt>Year</dt>
+                    <dd>2022.11 - 2023.04</dd>
+                </dl>
+                <dl>
+                    <dt>Role</dt>
+                    <dd>PM (기획, 디자인, 프론트엔드)</dd>
+                </dl>
+                <dl>
+                    <dt>Scope</dt>
+                    <dd>가이드라인 작성, 반응형 웹 디자인, 프론트 웹 구축</dd>
+                </dl>
+                <dl>
+                    <dt>Tools</dt>
+                    <dd>
+                        <span>
+                            <img src="img/ico_figma.png"/>
+                        </span>
+                        <span>
+                            <img src="img/ico_pts.png"/>
+                        </span>
+                        <span>
+                            <img src="img/ico_ill.png"/>
+                        </span>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="sec-detail">
+            <h4>Overview</h4>
+            <p>디자인시스템은 디자인 원칙과 규격, 재사용이 가능한 UI 패턴과 컴포넌트, 코드를 포괄하는 시스템입니다. 확장된 디자인시스템 개념에는 브랜드 원칙과 UX 원칙을 포함하며 현재 다누시스의 디자인시스템 단계는 다누시스 제품에서 사용할 UX/UI 컴포넌트와 패턴까지 제작되었습니다. 미리 정립한 디자인 패턴에 맞춰 제품 기능의 UI를 사용할 수 있으며 그로 인해 유저의 사용성을 개선할 수 있고 작업 소요 시간을 단축할 수 있습니다. 또한 디자인 업무 히스토리를 공유하지 않은 여러 사람이 디자인에 참여하여도 디자인 일관성을 확보할 수 있어 히스토리 운용에도 유용합니다.</p>
+        </div>
+        <nav class="table-contents">
+            <div class="contents-container">
+                <a href="#first" class="contents-area">
+                    <span>기존의 문제점</span>
+                </a>
+                <a href="#second" class="contents-area">
+                    <span>작업 프로세스</span>
+                </a>
+                <a href="#third" class="contents-area">
+                    <span>솔루션 결과</span>
+                </a>
+                <a href="#four" class="contents-area">
+                    <span>기대효과</span>
+                </a>
+            </div>
+        </nav>
+        <div id="first" class="content-wrap gray">
+            <div class="content-inner">
+                <h2>기존의 문제점</h2>
+                <h3>(1) 일관되지 않은 디자인</h3>
+                <p>일관되지 않은 UI가 사용성을 떨어뜨리고 있었습니다. 일반의 버튼 상태와 마우스 오버했을 경우의 버튼 상태, 눌렀을 때의 버튼 상태 값에 대한 규칙이 부재인 상태였습니다. 이런 사소한 부분들이 쌓여서 사용자의 사용성을 저하시키는 주요한 디자인적 문제로 작용하고 있었습니다.</p>
+            </div>
+            <div class="content-img">
+                <img src="img/design_1.png"/>
+            </div>
+        </div>
+        <div class="content-wrap gray">
+            <div class="content-inner">
+                <h3>(2) 비효율적인 작업의 지속적인 발생</h3>
+                <p>사이트 마다 새로운 IoT 디자인을 제작하면서 같은 기능임에도 다시 디자인 해야만 했고 그로 인해 비효율적인 작업이
+                    발생할 수 밖에 없었습니다. 버튼 스타일이 바뀌거거나 새로운 텍스트 인풋 창이 추가되는 경우에는 일일이 스타일을
+                    다시 잡아야 했고, 퍼블리싱에서도 마찬가지로 새로운 코드 규칙을 짜야 했습니다.</p>
+            </div>
+            <div class="content-img">
+                <img src="img/design_2.png"/>
+            </div>
+        </div>
+        <div class="content-wrap gray" style="padding-bottom: 92px;">
+            <div class="content-inner">
+                <h3>(3) 디자인 확장성 부족</h3>
+                <p>디자인 컴포넌트 끼리 연결되지 않아 요소를 확장하거나 고도화 하는 데 어려움이 있었습니다.
+                    이전의 디자인을 재활용하여 촉박한 마감일을 좇다 보니 사용성을 위해 디자인 개선과 문제 해결을 위해 고민할 수 있는
+                    시간을 갖을 수 없었습니다. </p>
+            </div>
+            <div class="content-img">
+                <img src="img/design_3.png"/>
+            </div>
+        </div>
+        <div id="second" class="content-wrap" style="margin-bottom: 92px;">
+            <div class="content-inner">
+                <h2>작업 프로세스</h2>
+                <p>디자인의 최초 뼈대가 되는 색깔, 글자, 아이콘 등으로 구성되는 파운데이션을 선행하여 작업하였습니다.
+                그 다음으로 파운데이션을 조합해서 구성되는 버튼, 뱃지, 드롭다운 등의 컴포넌트를 제작하고
+                마지막으로 컴포넌트를 조합해서 구성되는 테이블, 버튼 그룹 등의 패턴을 완성하였습니다.</p>
+            </div>
+            <div class="content-img">
+                <img src="img/design_4.png"/>
+            </div>
+        </div>
+        <div id="third" class="content-wrap gray">
+            <div class="content-inner">
+                <h2>솔루션 결과</h2>
+                <h3>(1) UI 디자인의 분업화</h3>
+                <p>상세한 디자인 가이드 규칙과 사내 작업 툴에 구축해 놓은 컴포넌트로 인해 UI 디자인이 디자이너만의 업무에 국한되지
+                    않고 유관 팀 구성원들도 UI 디자인에 참여할 수 있게 되었습니다. 기존의 디자이너만 작업할 수 있던 중앙 집중화
+                    모델에서 구성원 모두가 참여할 수 있는 분업화 모델로 확장할 수 있었습니다.</p>
+            </div>
+            <div class="content-img">
+                <img src="img/design_5.png"/>
+            </div>
+        </div>
+        <div class="content-wrap gray">
+            <div class="content-inner">
+                <h3>(2) 공동의 디자인 자산 확충</h3>
+                <p>UI 디자인 공동의 자산을 쌓았고 실제 업무에 사용하며 내용을 보충하고 보완하고 있습니다.
+                    디자인 톤앤매너 유지를 위해 별도의 미팅을 진행하지 않아도 모두 ‘어떤 컴포넌트를 어디에 사용하면 되는지’ 알고 있고
+                    그로 인해 공동의 지적 자산을 확보하였습니다.</p>
+            </div>
+            <div class="content-img">
+                <img src="img/design_6.png"/>
+            </div>
+        </div>
+        <div class="content-wrap gray" style="padding-bottom: 92px;">
+            <div class="content-inner">
+                <h3>(3) 커뮤니케이션 기준 마련</h3>
+                <p>협업 팀 마다 문화적 차이, 업무의 차이, 시야의 차이로 인해 커뮤니케이션이 어려울 수 있고 그로 인해 생기는
+                    미스커뮤니케이션은 업무 작업 소요 시간을 늘릴 수 있습니다. 디자인시스템의 ‘토큰’ 개념을 통해 컴포넌트 마다
+                    ‘이름 명명’을 하였고, 그로 인해 미스커뮤니케이션으로 인해 소요되는 불필요한 시간을 줄일 수 있었습니다.</p>
+            </div>
+            <div class="content-img">
+                <img src="img/design_7.png"/>
+            </div>
+        </div>
+        <div id="four" class="content-wrap">
+            <div class="content-inner">
+                <h2>기대효과</h2>
+                <h3>(1) 일관된 브랜드 정체성과 높은 사용성 확보</h3>
+                <p>다양한 사이트에 걸쳐 일관된 인터페이스 디자인을 전달하고 다누시스만의 UX 구조를 확보하고 개선해 나가며
+                    사용자와의 커뮤니케이션 서비스에 주목한다면 ‘락인 효과’를 기대할 수 있을 것 입니다. 
+                    이렇게 확보된 고객은 타 사와의 경쟁에서 우위를 선점할 수 있게 해주는 열쇄가 될 것 입니다.</p>
+            </div>
+            <div class="content-img">
+                <img src="img/design_8.png"/>
+            </div>
+        </div>
+        <div class="content-wrap">
+            <div class="content-inner">
+                <h3>(2) 웹과 앱에 동일한 환경 제공</h3>
+                <p>웹과 앱 디바이스 사이의 디자인 간극을 없앨 수 있습니다.
+                    웹에 사용한 컴포넌트와 동일하게 앱을 제작하거나 칼럼 시스템(참고자료)을 활용하여 반응형 플랫폼 제작을 드는
+                    작업 소요 시간을 줄이고 효율적이고 일관적으로 디자인 완성도를 높일 수 있습니다. </p>
+            </div>
+            <div class="content-img">
+                <img src="img/design_9.png"/>
+            </div>
+        </div>
+        <div class="more-projects">
+            <a href="#" class="other-project next">
+                <div class="text-direction">
+                    <svg class="next-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" width="24" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h24v24H0z"/></mask><g mask="url(#a)"><path fill="#333" d="m9 19-7-7 7-7 1.425 1.4-4.6 4.6H22v2H5.825l4.575 4.6L9 19Z"/></g></svg>
+                    <h5 class="next-text">Next up</h5>
+                </div>
+                <h4 class="next-project-name">Athena2</h4>
+            </a>
+            <a href="channel-app.html" class="other-project prev">
+                <div class="text-direction">
+                    <h5 class="pre-text">Previos</h5>
+                    <svg class="pre-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" width="24" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h24v24H0z"/></mask><g mask="url(#a)"><path fill="#333" d="m15 19-1.4-1.4 4.6-4.6H2v-2h16.2l-4.6-4.6L15 5l7 7-7 7Z"/></g></svg>
+                </div>
+                <h4 class="pre-project-name">샤넬 멤버쉽 앱</h4>
+            </a>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="light">©All Rights Reserved to Myeonghee Jeon. </p>
+    </div>
+    <script src="js/loading.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/section.js"></script>
+    <script src="js/gototop.js"></script>
+    <script>
+        function goToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>

@@ -30,6 +30,17 @@
     transform: translateX(0);
   }
 }
+@keyframes arrow-next {
+  0% {
+    transform: translateX(-28%);
+  }
+  50% {
+    transform: translateX(24%);
+  }
+  100% {
+    transform: translateX(-28%);
+  }
+}
 @keyframes wave_reverse {
   0% {
     transform: translateX(-100%);
@@ -482,7 +493,7 @@ body {
   animation: wave_reverse 40s infinite linear !important;
 }
 .main .top-visual .wave-txt .reverse h1 {
-  color: #0F6BFF !important;
+  color: #c2aef5 !important;
 }
 .main .top-visual .wave-txt .reverse h1 em {
   display: block;
@@ -506,7 +517,7 @@ body {
   white-space: nowrap;
   margin: 0;
   line-height: 0.9;
-  color: #4DE619;
+  color: #edb4eb;
 }
 .main .top-visual .wave-txt .wave h1 em {
   display: block;
@@ -591,10 +602,60 @@ body {
   left: 3vw;
   top: 48vh;
 }
+.main .top-visual .kv-sticker .obj6 {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-40deg);
+  position: absolute;
+  left: 19vw;
+  top: 24vh;
+  background-color: #cbfc55;
+  color: white;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.main .top-visual .kv-sticker .obj6 .arrow-next {
+  animation: arrow-next 4.2s infinite cubic-bezier(0.67, 0, 0.08, 1.48);
+  color: #0B0B0B;
+}
+.main .top-visual .kv-sticker .obj6 .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 24;
+  width: 80px;
+  height: 80px;
+  font-size: 80px;
+}
+.main .top-visual .kv-sticker .obj7 {
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(0deg);
+  position: absolute;
+  left: 70vw;
+  top: 54vh;
+  background-color: #0B0B0B;
+  color: white;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.main .top-visual .kv-sticker .obj7 .arrow-next {
+  animation: arrow-next 4.2s infinite cubic-bezier(0.67, 0, 0.08, 1.48);
+  color: #cbfc55;
+}
+.main .top-visual .kv-sticker .obj7 .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 24;
+  width: 100px;
+  height: 100px;
+  font-size: 100px;
+}
 .main .thum-container {
   width: 100%;
   height: 100%;
-  padding: 16px;
+  padding: 60px 16px;
 }
 .main .thum-container .thum-area {
   display: flex;
@@ -611,7 +672,7 @@ body {
   margin-bottom: 0;
 }
 .main .thum-container .thum-area .rows .thum-item {
-  width: 25%;
+  width: 33.3%;
   display: flex;
   flex-direction: column;
   margin-right: 16px;

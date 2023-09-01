@@ -121,6 +121,11 @@
 // responsive
 @media (min-width: 1024px) and (max-width: 1399px) {
 
+  .obj7 {
+    left: 66vw !important;
+    top: 58vh !important;
+  }
+
   .kv-sticker {
 
     .sticker {
@@ -181,6 +186,32 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+
+  .obj6 {
+    width: 120px;
+    height: 120px;
+    left: 19vw;
+    top: 24vh;
+
+    .material-symbols-outlined {
+      width: 80px;
+      height: 80px;
+      font-size: 80px;
+    }
+  }
+
+  .obj7 {
+    width: 140px !important;
+    height: 140px !important;
+    left: 71vw !important;
+    top: 65vh !important;
+
+    .material-symbols-outlined {
+      width: 100px !important;
+      height: 100px !important;
+      font-size: 100px !important;
+    }
+  }
 
   .kv-sticker {
 
@@ -340,6 +371,32 @@
 }
 
 @media (max-width: 767px) {
+
+  .obj6 {
+    width: 80px !important;
+    height: 80px !important;
+    left: 28vw !important;
+    top: 3vh !important;
+
+    .material-symbols-outlined {
+      width: 40px !important;
+      height: 40px !important;
+      font-size: 40px !important;
+    }
+  }
+
+  .obj7 {
+    width: 110px !important;
+    height: 110px !important;
+    left: 18vw !important;
+    top: 37vh !important;
+
+    .material-symbols-outlined {
+      width: 80px !important;
+      height: 80px !important;
+      font-size: 80px !important;
+    }
+  }
 
   .wave {
 
@@ -844,15 +901,15 @@ body {
       }
 
       .obj7 {
-        width: 140px;
-        height: 140px;
+        width: 160px;
+        height: 160px;
         display: flex;
         align-items: center;
         justify-content: center;
         transform: rotate(0deg);
         position: absolute;
-        left: 70vw;
-        top: 54vh;
+        left: 64vw;
+        top: 52vh;
         background-color: $gray_120;
         color: white;
         border-radius: 999px;
@@ -869,9 +926,9 @@ body {
           'wght' 500,
           'GRAD' 0,
           'opsz' 24;
-          width: 100px;
-          height: 100px;
-          font-size: 100px;
+          width: 120px;
+          height: 120px;
+          font-size: 120px;
         }
       }
     }

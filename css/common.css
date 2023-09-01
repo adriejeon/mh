@@ -935,10 +935,10 @@ body {
   color: #212121;
 }
 .con .more-projects .other-project .text-direction h5.pre-text {
-  margin-left: 12px;
+  margin-right: 12px;
 }
 .con .more-projects .other-project .text-direction h5.next-text {
-  margin-right: 12px;
+  margin-left: 12px;
 }
 .con .more-projects .other-project h4 {
   font-size: 20px;
@@ -947,10 +947,10 @@ body {
   margin-top: 8px;
 }
 .con .more-projects .other-project h4.pre-project-name {
-  margin-left: 35px;
+  margin-right: 35px;
 }
 .con .more-projects .other-project h4.next-project-name {
-  margin-right: 35px;
+  margin-left: 35px;
   text-align: right;
 }
 .con .more-projects .next:hover .text-direction svg.next-svg {

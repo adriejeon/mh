@@ -1204,11 +1204,11 @@ body {
           color: $gray_110;
 
           &.pre-text {
-            margin-left: 12px;
+            margin-right: 12px;
           }
 
           &.next-text {
-            margin-right: 12px;
+            margin-left: 12px;
           }
         }
       }
@@ -1220,11 +1220,11 @@ body {
         margin-top: 8px;
 
         &.pre-project-name {
-          margin-left: 35px;
+          margin-right: 35px;
         }
 
         &.next-project-name {
-          margin-right: 35px;
+          margin-left: 35px;
           text-align: right;
         }
       }

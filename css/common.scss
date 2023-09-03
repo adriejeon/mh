@@ -48,15 +48,15 @@
 
 @keyframes arrow-next {
   0% {
-    transform: translateX(-28%);
+    transform: translateX(0);
   }
 
   50% {
-    transform: translateX(24%);
+    transform: translateX(40%);
   }
 
   100% {
-    transform: translateX(-28%);
+    transform: translateX(0);
   }
 }
 
@@ -373,8 +373,8 @@
 @media (max-width: 767px) {
 
   .obj6 {
-    width: 80px !important;
-    height: 80px !important;
+    width: 60px !important;
+    height: 60px !important;
     left: 28vw !important;
     top: 3vh !important;
 
@@ -386,8 +386,8 @@
   }
 
   .obj7 {
-    width: 110px !important;
-    height: 110px !important;
+    width: 90px !important;
+    height: 90px !important;
     left: 18vw !important;
     top: 37vh !important;
 
@@ -881,10 +881,9 @@ body {
         background-color: #cbfc55;
         color: white;
         border-radius: 999px;
-        overflow: hidden;
 
         .arrow-next {
-          animation: arrow-next 4.2s infinite cubic-bezier(0.67, 0, 0.08, 1.48);
+          animation: arrow-next 2.2s infinite ease-in-out;
           color: $gray_120;
         }
 
@@ -913,10 +912,9 @@ body {
         background-color: $gray_120;
         color: white;
         border-radius: 999px;
-        overflow: hidden;
 
         .arrow-next {
-          animation: arrow-next 4.2s infinite cubic-bezier(0.67, 0, 0.08, 1.48);
+          animation: arrow-next 2.2s infinite ease-out;
           color: #cbfc55;
         }
 

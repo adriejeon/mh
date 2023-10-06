@@ -850,13 +850,13 @@ body {
 }
 .con .top-visual .hero-pc {
   display: flex;
-  height: 100%;
+  width: 100%;
   justify-content: center;
   align-items: center;
 }
 .con .top-visual .hero-mo {
   display: none;
-  height: 100%;
+  width: 100%;
   justify-content: center;
   align-items: center;
 }
@@ -1006,6 +1006,19 @@ body {
   background-size: contain;
   width: 100%;
   height: 100%;
+}
+.con .full-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.con .full-img img {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .con .more-projects {
   width: 100%;

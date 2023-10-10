@@ -93,7 +93,7 @@
     font-size: 10vw !important;
   }
   .obj1 {
-    width: 22vw !important;
+    width: 36vw !important;
     height: 16vh !important;
     left: 6vw;
     top: 13vh;
@@ -105,7 +105,7 @@
     top: 30vh !important;
   }
   .obj3 {
-    width: 27vw !important;
+    width: 33vw !important;
     height: 16vh !important;
     left: 61vw !important;
     top: 14vh !important;
@@ -159,7 +159,7 @@
     font-size: 12vw !important;
   }
   .obj1 {
-    width: 26vw !important;
+    width: 44vw !important;
     height: 16vh !important;
     left: 6vw;
     top: 13vh;
@@ -171,7 +171,7 @@
     top: 30vh !important;
   }
   .obj3 {
-    width: 30vw !important;
+    width: 40vw !important;
     height: 16vh !important;
     left: 56vw !important;
     top: 14vh !important;
@@ -187,6 +187,10 @@
     height: 16vh !important;
     left: 6vw !important;
     top: 57vh !important;
+  }
+  .obj6 {
+    left: 20vw !important;
+    top: 32vh !important;
   }
   .thum-container .thum-area .rows {
     display: flex;
@@ -266,8 +270,8 @@
   .obj6 {
     width: 60px !important;
     height: 60px !important;
-    left: 28vw !important;
-    top: 3vh !important;
+    left: 65vw !important;
+    top: 12vh !important;
   }
   .obj6 .material-symbols-outlined {
     width: 40px !important;
@@ -295,10 +299,10 @@
     font-size: 16vw !important;
   }
   .obj1 {
-    width: 33vw !important;
+    width: 62vw !important;
     height: 11vh !important;
-    left: 6vw;
-    top: 13vh;
+    left: 6vw !important;
+    top: 8vh !important;
   }
   .obj2 {
     width: 79vw !important;
@@ -307,10 +311,10 @@
     top: 30vh !important;
   }
   .obj3 {
-    width: 40vw !important;
+    width: 55vw !important;
     height: 11vh !important;
-    left: 52vw !important;
-    top: 14vh !important;
+    left: 43vw !important;
+    top: 20vh !important;
   }
   .obj4 {
     width: 48vw !important;
@@ -596,7 +600,7 @@ body {
   text-transform: uppercase;
 }
 .main .top-visual .kv-sticker .obj1 {
-  width: 15vw;
+  width: 30vw;
   height: 20vh;
   display: flex;
   align-items: center;
@@ -618,7 +622,7 @@ body {
   top: 30vh;
 }
 .main .top-visual .kv-sticker .obj3 {
-  width: 19vw;
+  width: 26vw;
   height: 20vh;
   display: flex;
   align-items: center;
@@ -658,7 +662,7 @@ body {
   justify-content: center;
   transform: rotate(-40deg);
   position: absolute;
-  left: 19vw;
+  left: 32vw;
   top: 24vh;
   background-color: #cbfc55;
   color: white;

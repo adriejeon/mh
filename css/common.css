@@ -41,6 +41,11 @@
     transform: translateX(0);
   }
 }
+@keyframes text-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @keyframes wave_reverse {
   0% {
     transform: translateX(-100%);
@@ -151,9 +156,9 @@
     top: 65vh !important;
   }
   .obj7 .material-symbols-outlined {
-    width: 100px !important;
-    height: 100px !important;
-    font-size: 100px !important;
+    width: 60px !important;
+    height: 60px !important;
+    font-size: 60px !important;
   }
   .kv-sticker .sticker h2 {
     font-size: 12vw !important;
@@ -268,15 +273,15 @@
 }
 @media (max-width: 767px) {
   .obj6 {
-    width: 60px !important;
-    height: 60px !important;
+    width: 90px !important;
+    height: 90px !important;
     left: 65vw !important;
     top: 12vh !important;
   }
   .obj6 .material-symbols-outlined {
-    width: 40px !important;
-    height: 40px !important;
-    font-size: 40px !important;
+    width: 30% !important;
+    height: 30px !important;
+    font-size: 30px !important;
   }
   .obj7 {
     width: 90px !important;
@@ -285,9 +290,9 @@
     top: 37vh !important;
   }
   .obj7 .material-symbols-outlined {
-    width: 80px !important;
-    height: 80px !important;
-    font-size: 80px !important;
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 30px !important;
   }
   .wave h1 {
     font-size: 21vh !important;
@@ -660,23 +665,33 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: rotate(-40deg);
   position: absolute;
   left: 32vw;
   top: 24vh;
   background-color: #cbfc55;
   color: white;
   border-radius: 999px;
+  padding: 8px;
+  transform: rotate(90deg);
+}
+.main .top-visual .kv-sticker .obj6 img {
+  animation: text-rotate 6s linear infinite;
+  transform-origin: 50% 50%;
+  position: relative;
+  background-size: contain;
+  width: 100%;
+}
+.main .top-visual .kv-sticker .obj6 span {
+  position: absolute;
 }
 .main .top-visual .kv-sticker .obj6 .arrow-next {
-  animation: arrow-next 2.2s infinite ease-in-out;
   color: #0B0B0B;
 }
 .main .top-visual .kv-sticker .obj6 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 24;
-  width: 80px;
-  height: 80px;
-  font-size: 80px;
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
 }
 .main .top-visual .kv-sticker .obj7 {
   width: 160px;
@@ -691,16 +706,27 @@ body {
   background-color: #0B0B0B;
   color: white;
   border-radius: 999px;
+  padding: 8px;
+  transform: rotate(90deg);
+}
+.main .top-visual .kv-sticker .obj7 img {
+  animation: text-rotate 6s linear infinite;
+  transform-origin: 50% 50%;
+  position: relative;
+  background-size: contain;
+  width: 100%;
+}
+.main .top-visual .kv-sticker .obj7 span {
+  position: absolute;
 }
 .main .top-visual .kv-sticker .obj7 .arrow-next {
-  animation: arrow-next 2.2s infinite ease-out;
   color: #cbfc55;
 }
 .main .top-visual .kv-sticker .obj7 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 24;
-  width: 120px;
-  height: 120px;
-  font-size: 120px;
+  width: 60px;
+  height: 60px;
+  font-size: 60px;
 }
 .main .thum-container {
   width: 100%;
